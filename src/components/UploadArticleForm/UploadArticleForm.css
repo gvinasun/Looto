@@ -1,0 +1,86 @@
+.containerUploadArticle {
+  margin-top: 85px; /*borde superior para que el navbar no tape el contenido*/
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.upArtForm {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* selección de opciones */
+.form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.uploadPhotos {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* cursor de subir fotos*/
+.photoUploadLabel {
+  cursor: pointer;
+}
+
+/* contorno que engloba el subir fotos entre puntos*/
+.photoUploadContour {
+  display: inline-block;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.uploadButton {
+  text-align: right;
+}
+
+.submitButton {
+  background-color: #e29023b2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitButton:hover {
+  background-color: #d87f09b2;
+}

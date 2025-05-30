@@ -1,0 +1,40 @@
+.container {
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* creamos fina linea */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 1rem;
+}
+
+.partnerContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.partner {
+  width: 100px;
+  height: 60px;
+}
+
+/* efecto para cuando pasamos el ratón por encima */
+.partner:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

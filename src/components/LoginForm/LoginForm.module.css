@@ -1,0 +1,133 @@
+/* contenedor para el formulario del login */
+.formContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+/* da formato al titulo*/
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+/* amplia el espacio de los inputs en el form*/
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+
+/* separador entre las dos maneras de logearse, o email/contraseña */
+.separator {
+  text-align: center;
+  margin: 1rem 0;
+  color: #888;
+}
+
+/* agrupación de los campos (email, password) */
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+/* texto de arriba de los inputs (email, password)*/
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* inputs del formulario */
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* contenedor para input de contraseña + ícono del ojo */
+.passwordWrapper {
+  position: relative;
+}
+
+/* icono de mostrar/ocultar contraseña */
+.passwordIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.passwordIcon:hover {
+  opacity: 1;
+}
+
+/* contenedor para recordar contraseña y enlace de recuperación */
+.passwordOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* checkbox para recordar co no la contraseña */
+.rememberMe {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* enlace para recuperar contraseña */
+.forgotPassword {
+  color: #007bff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* botón para enviar el formulario y asi iniciar sesión */
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #E29023B2;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.submitButton:hover {
+  background-color: #d87f09b2;
+}
+
+/* texto por si no tienes cuenta y debes registrarte */
+.register {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+}
+
+/* texto que te dirigue a la página de registro */
+.registerLink {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* texto de error para cuando ocurra */
+.errorMessage {
+  color: red;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+.loginSection {
+  flex: 1;
+  background-color: #e8f5f8;
+  display: flex;
+  /* es la dirección en la que se apilan los objetos, en este caso vertical, con una dirección normal */
+  flex-direction: column;
+  /* distribuimos los elementos de esta seccion izquierda para mantener espacio entre ellos */
+  justify-content: space-between;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  text-decoration: none;
+}
+
+.slogan {
+  font-size: 1.7rem;
+  text-align: left;
+  color: #000;
+  padding: 0rem 5rem;
+}
+
+.image {
+  width: 100%;
+  margin: 0;
+}

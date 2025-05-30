@@ -1,0 +1,153 @@
+.detailContainer {
+  display: flex;
+  gap: 40px;
+  max-width: 950px;
+  margin: 40px auto;
+  margin-top: 85px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+.imagesSection {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mainImg {
+  max-width: 100%;
+  border-radius: 10px;
+  background: #f2f2f2;
+  object-fit: cover;
+}
+/* Sección de información */
+.infoSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.price {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #d87f09b2;
+}
+/* Etiquetas con estado y operación */
+.state,
+.operation {
+  background: #f2f2f2;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.9em;
+  margin-right: 6px;
+}
+/* Botones de comprar/intercambiar visibles depende del tipo de artículo */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+.buyBtn {
+  background: #e29023b2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.buyBtn:hover {
+  background-color: #d87f09b2;
+  color: white;
+}
+.tradeBtn {
+  background: #fff;
+  color: #e29023b2;
+  border: 2px solid #e29023b2;
+  border-radius: 5px;
+  padding: 8px 18px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.tradeBtn:hover {
+  background-color: white;
+  color: #d87f09b2;
+}
+
+/* - Perfil vendedor - */
+.userBox {
+  margin-top: 32px;
+  background: #f7f7fa;
+  border-radius: 10px;
+  padding: 18px 12px;
+}
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* Imagen circular del avatar */
+.userAvatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  border: 2px solid #e29023b2;
+}
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.userName {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.userLocation {
+  font-size: 0.92rem;
+  color: #777;
+  margin-bottom: 2px;
+  margin-left: 1px;
+}
+.userRatingsRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.stars img {
+  width: 20px;
+  height: auto;
+  margin-right: 2px;
+}
+.reviews {
+  margin-top: 1px;
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 2px;
+}
+.userLastSeen {
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 1px;
+}
+/* Botón de eliminar artículo, visible para el usuario que lo subió */
+.deleteButton {
+  background: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 20px;
+}
+.deleteButton:hover {
+  background: #ff2c2c;
+}

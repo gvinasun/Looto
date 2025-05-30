@@ -1,0 +1,87 @@
+/* importación de las fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat:wght@600;700&display=swap");
+
+/* Fuente principal y mejora de renderizado */
+body {
+  margin: 0;
+  font-family: "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif; /* Fuente para las páginas, con alternativas por si alguna no funciona */
+  /* Fuente principal con alternativas */
+  -webkit-font-smoothing: antialiased; /* Suaviza fuentes en Webkit (Chrome, Safari) 
+  -moz-osx-font-smoothing: grayscale; /* Suaviza fuentes en Firefox Mac */
+}
+
+/* - ESTILOS GENERALES - */
+
+/* Para los títulos y los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+/* Para el texto base y elementos del formulario */
+p,
+span,
+button,
+input,
+textarea,
+a,
+li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* Para los botones */
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* Para el codigo */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Contenedor central que aplica márgenes laterales en todas las páginas */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* - HOME - */
+
+/* Título de la sección de novedades */
+.section-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* - NAVBAR - */
+
+.navbar {
+  border-bottom: 2px solid #cccccc; /* línea de color debajo del Navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra en el mismo lugar */
+}
+
+/* - LOGIN/REGISTER - */
+
+/* Contenedores para dividir en dos columnas la seccion izquiera, y el form derecho */
+
+.loginContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* ocupa toda la altura de la pantalla */
+}
+
+.registerContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}

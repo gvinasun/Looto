@@ -1,0 +1,41 @@
+/* container general */
+.aboutUsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px; /* espacio superior para que el navbar no se ponga encima del contenido de las páginas */
+}
+
+/* titulo principal */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* img encabezado */
+.image {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+}
+
+/* info página sobre nosotros */
+.textContent {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* titulo de contacto con nos */
+.contactTtitle h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* icono email con el tamaño adecuado */
+.contactIcon {
+  width: 50px;
+  height: auto;
+}

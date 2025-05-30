@@ -1,0 +1,54 @@
+.userProfile {
+  display: flex;
+  flex-direction: column; /* dispone el contenido en una columna */
+  align-items: left;
+  margin: 1rem;
+  padding-top: 50px; /* espacio superior para que el navbar no se ponga encima del contenido de las páginas */
+}
+
+.avatarSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* vuelve la imagen del avatar circular */
+  object-fit: cover; /* hace que la imagen llene el espacio */
+}
+
+.userInfo {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.username {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.userDetails {
+  list-style: none;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.reviews {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1.5rem;
+}
+
+.stars img {
+  width: 20px; /* mismo tamaño para las estrellas */
+  height: auto;
+  margin-right: 4px;
+}

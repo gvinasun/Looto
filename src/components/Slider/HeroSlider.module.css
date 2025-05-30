@@ -1,0 +1,39 @@
+/* espacio superior para que el navbar no se ponga encima del contenido de las páginas */
+.containerSlider {
+  padding-top: 55px;
+}
+
+/* se añade una capa oscura a la img para mejorar la legibilidad del texto*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* color de la capa para la img con transparencia */
+}
+
+/* estilos para centrar el texto */
+.caption {
+  transform: translateY(-50%); /* se centra perfectamente */
+  color: white;
+}
+
+/* se ajusta el tamaño del contenedor del carrusel */
+.slider {
+  position: relative;
+  height: 300px;
+}
+
+/* ajustamos el tamaño de las imágenes */
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* la imagen se escala y recorta para llenar el contenedor */
+  object-position: center; /* centramos este recorte */
+}

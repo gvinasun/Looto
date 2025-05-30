@@ -1,0 +1,27 @@
+.containerExchangeArticle {
+  margin-top: 85px; /*borde superior para que el navbar no tape el contenido*/
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.exchangeSection {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.loadMoreButton {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e29023b2;
+  border-radius: 5px;
+  background-color: #e29023b2;
+  color: white;
+  display: block;
+  margin: 2rem auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  background-color: white;
+  color: #d87f09b2;
+}

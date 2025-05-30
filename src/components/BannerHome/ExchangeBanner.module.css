@@ -1,0 +1,64 @@
+/* contenedor que utiliza Flexbox */
+.container {
+  display: flex; /* crea un diseño de Flexbox */
+  align-items: center;
+  background-color: #f2f2f2;
+  padding-left: 5rem;
+}
+
+.primaryButton {
+  padding: 0.5rem 1rem; /* añade espacio dentro del botón */
+  background-color: #e29023b2;
+  color: #fff; /* color texto */
+  border: none;
+  cursor: pointer; /* se cambia el cursor a "pointer" al pasar por encima */
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primaryButton:hover {
+  background-color: #d87f09b2; /* cambia el color al pasar el ratón gracias al hover */
+}
+
+/* sección de texto e imagen dentro del contenedor */
+/* ocupan cada uno una porción igual del espacio que haya disponible */
+
+.textSection {
+  flex: 1;
+  padding-right: 35px;
+  text-align: justify;
+}
+
+.imageSection {
+  flex: 1;
+}
+
+.image {
+  width: 100%; /* la img ocupa todo el ancho */
+  height: auto; /* se conserva la proporción original de esta */
+}
+
+/* Responsive para redimensionar y colocar los elementos para una mejor experiencia */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+  }
+  .heading {
+    margin-top: 1rem;
+  }
+  .textSection,
+  .imageSection {
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .primaryButton {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}

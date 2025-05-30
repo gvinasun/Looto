@@ -1,0 +1,25 @@
+.newsletterContainer {
+  background-color: #e29023b2;
+  border-radius: 15px; /* se ponen los border exteriores redondos */
+}
+
+/* estilo para el input del correo */
+.input {
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* estilo para el botón de suscribirse */
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  margin-top: 1.5rem;
+}
+.button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,112 @@
+/* contenedor para el formulario de registro */
+.registerContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+/* da formato al titulo*/
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+/* amplia el espacio de los inputs en el form*/
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* separador entre las dos maneras de logearse, email/contraseña */
+.separator {
+  text-align: center;
+  margin: 1rem 0;
+  color: #888;
+}
+
+/* agrupación de los campos (email, password) */
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+/* texto de arriba de los inputs (email, password)*/
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* inputs del formulario */
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* botón para enviar el formulario y asi iniciar sesión */
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e29023b2;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.submitButton:hover {
+  background-color: #d87f09b2;
+}
+
+/* texto que te dirigue a la página de login */
+.loginLink {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+}
+
+/* quita el subrayado y se pone un azul distinto */
+.login {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* engloba el input y el icono del ojo dentro de este */
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordIcon {
+  width: 24px; /* se ajusta según las medidas de nuestro ícono */
+  height: 24px;
+  object-fit: contain;
+  position: absolute;
+  top: 50%; /* se centra verticalmente */
+  right: 12px;
+  transform: translateY(
+    -50%
+  ); /* es un ajuste fijo para centrar verticalmente */
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.passwordIcon:hover {
+  opacity: 1;
+}
+
+/* errores del backend */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
