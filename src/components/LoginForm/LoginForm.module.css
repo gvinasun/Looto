@@ -91,7 +91,7 @@
 
 /* enlace para recuperar contraseña */
 .forgotPassword {
-  color: #007bff;
+  color: #004080;
   font-size: 0.9rem;
   text-decoration: none;
 }
@@ -120,7 +120,7 @@
 
 /* texto que te dirigue a la página de registro */
 .registerLink {
-  color: #007bff;
+  color: #004080;
   text-decoration: none;
 }
 
