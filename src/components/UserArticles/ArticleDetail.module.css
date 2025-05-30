@@ -114,7 +114,7 @@
 }
 .userLocation {
   font-size: 0.92rem;
-  color: #777;
+  color: #666;
   margin-bottom: 2px;
   margin-left: 1px;
 }
@@ -141,7 +141,7 @@
 }
 /* Botón de eliminar artículo, visible para el usuario que lo subió */
 .deleteButton {
-  background: #ff5c5c;
+  background: #c0392b;
   color: white;
   border: none;
   border-radius: 5px;
@@ -149,5 +149,5 @@
   margin-top: 20px;
 }
 .deleteButton:hover {
-  background: #ff2c2c;
+  background: #922b21;
 }
