@@ -46,7 +46,7 @@ const UploadArticleForm = () => {
     try {
       // Enviamos los datos del form al backend
       const response = await fetch(
-        "http://localhost:5000/api/articles/uploads",
+        `${process.env.REACT_APP_API_URL}/api/articles/uploads`,
         {
           method: "POST",
           body: formData,

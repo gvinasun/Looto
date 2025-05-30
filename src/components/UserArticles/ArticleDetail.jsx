@@ -11,17 +11,17 @@ const ArticleDetail = () => {
   const [loading, setLoading] = useState(true); // Para mostrar un msj mientras se cargan los datos
 
   const userId = localStorage.getItem("userId"); // Obtenemos el ID de localStore
-  const isLoggedIn = !!userId;  // Comprobamos si el usuario ha iniciado sesión
+  const isLoggedIn = !!userId; // Comprobamos si el usuario ha iniciado sesión
 
   // Al cargar el componente, pedimos y obtenemos los datos del art al backend
   useEffect(() => {
     const fetchArticle = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/articles/${id}`
+          `${process.env.REACT_APP_API_URL}/api/articles/${id}`
         );
         const data = await response.json();
-        if (response.ok) setArticle(data); // Guardamos el artículo 
+        if (response.ok) setArticle(data); // Guardamos el artículo
       } catch (error) {
         console.error("Error:", error);
       } finally {
@@ -36,7 +36,7 @@ const ArticleDetail = () => {
     if (window.confirm("¿Estás seguro de que deseas eliminar este artículo?")) {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/articles/${id}?userId=${userId}`,
+          `${process.env.REACT_APP_API_URL}/api/articles/${id}?userId=${userId}`,
           {
             method: "DELETE",
           }
@@ -83,7 +83,7 @@ const ArticleDetail = () => {
           article.photos.map((url, idx) => (
             <img
               key={idx}
-              src={`http://localhost:5000${url}`}
+              src={`${process.env.REACT_APP_API_URL}${url}`}
               alt={`Imagen ${idx + 1}`}
               className={styles.mainImg}
             />

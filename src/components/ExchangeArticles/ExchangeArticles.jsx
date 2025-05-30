@@ -17,7 +17,7 @@ const ExchangeArticles = () => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/articles/public"
+          `${process.env.REACT_APP_API_URL}/api/articles/public`
         );
         const data = await response.json();
 
@@ -37,7 +37,9 @@ const ExchangeArticles = () => {
               price: article.price,
               visits: article.showVisits,
               // Obtiene la primera imagen subida como portada
-              imageUrl: `http://localhost:5000${article.photos[0]}`,
+              imageUrl: article.photos?.[0]
+                ? `${process.env.REACT_APP_API_URL}${article.photos[0]}`
+                : undefined,
             }));
 
           setArticles(filteredArticles);

@@ -23,14 +23,17 @@ app.get("/", (req, res) => {
 // Hace accesibles públicamente a las img subidas de la carpeta "uploads" a través de la ruta "/uploads"
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+const allowedOrigin = process.env.FRONTEND_URL || "http://localhost:3000";
+
 // Permite la comunicación con el frontend, y aceptar solicitudes de este
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: allowedOrigin,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
+
 
 // Middlewares para parsear el cuerpo de las peticiones
 app.use(bodyParser.json());
@@ -46,3 +49,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+

@@ -44,12 +44,15 @@ const RegisterForm = () => {
 
     try {
       // Hacemos una solicitud POST al servidor
-      const response = await fetch("http://localhost:5000/api/auth/register", {
-        method: "POST", // Enviamos los datos
-        headers: { "Content-Type": "application/json" },
-        // Se convierten los datos de registro en una cadena JSON
-        body: JSON.stringify({ email: form.email, password: form.password }),
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_API_URL}/api/auth/register`,
+        {
+          method: "POST", // Enviamos los datos
+          headers: { "Content-Type": "application/json" },
+          // Se convierten los datos de registro en una cadena JSON
+          body: JSON.stringify({ email: form.email, password: form.password }),
+        }
+      );
 
       // Convierte la respuesta del servidor a JSON y se guardan en la variable que hemos creado data
       const data = await response.json();

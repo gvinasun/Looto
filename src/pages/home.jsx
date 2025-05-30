@@ -19,7 +19,7 @@ const Home = () => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/articles/public"
+          `${process.env.REACT_APP_API_URL}/api/articles/public`
         );
         const data = await response.json();
         if (response.ok) {
@@ -31,7 +31,7 @@ const Home = () => {
             state: article.state,
             price: article.price,
             imageUrl: article.photos?.[0]
-              ? `http://localhost:5000${article.photos[0]}`
+              ? `${process.env.REACT_APP_API_URL}${article.photos[0]}`
               : undefined,
           }));
           setProducts(adapted);
@@ -54,7 +54,7 @@ const Home = () => {
     }
     try {
       const response = await fetch(
-        `http://localhost:5000/api/articles/search?q=${encodeURIComponent(
+      `${process.env.REACT_APP_API_URL}/api/articles/search?q=${encodeURIComponent(
           search
         )}`
       );
@@ -67,7 +67,7 @@ const Home = () => {
           state: article.state,
           price: article.price,
           imageUrl: article.photos?.[0]
-            ? `http://localhost:5000${article.photos[0]}`
+          ? `${process.env.REACT_APP_API_URL}${article.photos[0]}`
             : undefined,
         }));
         setFiltered(adapted);
