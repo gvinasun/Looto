@@ -29,8 +29,8 @@ const FooterPage = () => {
             <ul>
               <li>Blog</li>
             </ul>
+            <h6>Síguenos:</h6>
             <ul>
-              <h6>Síguenos:</h6>
               <li>Instagram</li>
               <li>Twitter</li>
               <li>Facebook</li>

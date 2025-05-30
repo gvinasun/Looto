@@ -6,7 +6,7 @@
 
 .brand {
   font-weight: 500 !important;
-  color: #e29023b2 !important;
+  color: #cc7700 !important;
 }
 
 .buttonNav {
@@ -17,8 +17,8 @@
 
 .outlineSecondary {
   background-color: transparent !important;
-  color: #e29023b2 !important;
-  border: 1px solid #e29023b2 !important;
+  color: #cc7700 !important;
+  border: 1px solid #cc7700 !important;
 }
 
 .outlineSecondary:hover,
@@ -37,7 +37,7 @@
 }
 
 .dropdownItemStyle {
-  color: #e29023b2 !important;
+  color: #cc7700 !important;
   background-color: white !important;
   border-radius: 6px !important;
   padding: 8px 20px !important;
