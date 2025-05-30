@@ -8,7 +8,7 @@
 
 .primaryButton {
   padding: 0.5rem 1rem; /* añade espacio dentro del botón */
-  background-color: #e29023;
+  background-color: #a36813;
   color: #fff; /* color texto */
   border: none;
   cursor: pointer; /* se cambia el cursor a "pointer" al pasar por encima */
@@ -18,7 +18,7 @@
 }
 
 .primaryButton:hover {
-  background-color: #c77f20; /* cambia el color al pasar el ratón gracias al hover */
+  background-color: #7c4d06; /* cambia el color al pasar el ratón gracias al hover */
 }
 
 /* sección de texto e imagen dentro del contenedor */
