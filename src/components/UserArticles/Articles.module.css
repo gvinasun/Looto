@@ -21,9 +21,9 @@
 .loadMoreButton {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  border: 1px solid #e29023b2;
+  border: 1px solid #a36813;
   border-radius: 5px;
-  background-color: #e29023b2;
+  background-color: #a36813;
   color: white;
   cursor: pointer;
   display: block;
@@ -35,5 +35,5 @@
 /* cambiamos la letra y el fondo */
 .loadMoreButton:hover {
   background-color: white;
-  color: #d87f09b2;
+  color: #8c5700;
 }

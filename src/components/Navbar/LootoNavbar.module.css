@@ -23,9 +23,9 @@
 
 .outlineSecondary:hover,
 .outlineSecondary:focus {
-  background-color: #e29023b2 !important;
+  background-color: #e29023 !important;
   color: white !important;
-  border-color: #e29023b2 !important;
+  border-color: #e29023 !important;
 }
 
 .dropdownMenuStyle {
@@ -47,6 +47,6 @@
 .dropdownItemStyle:hover,
 .dropdownItemStyle:active,
 .dropdownItemStyle:focus {
-  background-color: #e29023b2 !important;
+  background-color: #e29023 !important;
   color: white !important;
 }

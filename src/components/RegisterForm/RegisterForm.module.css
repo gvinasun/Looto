@@ -55,14 +55,14 @@
 .submitButton {
   width: 100%;
   padding: 0.75rem;
-  background-color: #e29023b2;
+  background-color: #a36813;
   border: none;
   border-radius: 4px;
   color: #ffffff;
 }
 
 .submitButton:hover {
-  background-color: #d87f09b2;
+  background-color: #e29023;
 }
 
 /* texto que te dirigue a la página de login */

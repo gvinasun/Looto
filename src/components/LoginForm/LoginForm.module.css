@@ -100,14 +100,14 @@
 .submitButton {
   width: 100%;
   padding: 0.75rem;
-  background-color: #E29023B2;
+  background-color: #a36813;
   border: none;
   border-radius: 4px;
   color: #ffffff;
 }
 
 .submitButton:hover {
-  background-color: #d87f09b2;
+  background-color: #e29023;
 }
 
 /* texto por si no tienes cuenta y debes registrarte */
