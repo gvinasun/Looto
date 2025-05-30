@@ -45,8 +45,9 @@ app.use("/api/articles", articleRoutes);
 
 // Puerto del servidor
 const PORT = process.env.PORT || 5000;
+const HOST = process.env.HOST || '0.0.0.0';
 
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
 
