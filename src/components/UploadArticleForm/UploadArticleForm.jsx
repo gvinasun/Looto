@@ -114,8 +114,9 @@ const UploadArticleForm = () => {
 
         {/* Tipo de operación */}
         <div className="form">
-          <label>¿Qué prefieres?</label>
+          <label htmlFor="operation">¿Qué prefieres?</label>
           <select
+            id="operation"
             value={operation}
             onChange={(e) => setoperation(e.target.value)}
             required
@@ -128,8 +129,9 @@ const UploadArticleForm = () => {
 
         {/* Estado del artículo */}
         <div className="form">
-          <label>Estado del artículo</label>
+          <label htmlFor="state">Estado del artículo</label>
           <select
+            id="state"
             value={state}
             onChange={(e) => setState(e.target.value)}
             required

@@ -28,7 +28,7 @@
 .separator {
   text-align: center;
   margin: 1rem 0;
-  color: #888;
+  color: #666;
 }
 
 /* agrupación de los campos (email, password) */
@@ -41,7 +41,7 @@
   display: block;
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  color: #888;
+  color: #666;
 }
 
 /* inputs del formulario */
@@ -86,7 +86,7 @@
 /* checkbox para recordar co no la contraseña */
 .rememberMe {
   font-size: 0.9rem;
-  color: #888;
+  color: #666;
 }
 
 /* enlace para recuperar contraseña */
@@ -114,7 +114,7 @@
 .register {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #888;
+  color: #666;
   text-align: center;
 }
 
