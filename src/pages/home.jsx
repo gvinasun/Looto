@@ -35,7 +35,7 @@ const Home = () => {
               : undefined,
           }));
           setProducts(adapted);
-          setFiltered(adapted); // Al inicio, muestra todos los artículos 
+          setFiltered(adapted); // Al inicio, muestra todos los artículos
         }
       } catch (err) {
         console.error("Error en la carga de productos:", err);
@@ -54,9 +54,9 @@ const Home = () => {
     }
     try {
       const response = await fetch(
-      `${process.env.REACT_APP_API_URL}/api/articles/search?q=${encodeURIComponent(
-          search
-        )}`
+        `${
+          process.env.REACT_APP_API_URL
+        }/api/articles/search?q=${encodeURIComponent(search)}`
       );
       const data = await response.json();
       if (Array.isArray(data)) {
@@ -67,7 +67,7 @@ const Home = () => {
           state: article.state,
           price: article.price,
           imageUrl: article.photos?.[0]
-          ? `${process.env.REACT_APP_API_URL}${article.photos[0]}`
+            ? `${process.env.REACT_APP_API_URL}${article.photos[0]}`
             : undefined,
         }));
         setFiltered(adapted);
@@ -113,4 +113,3 @@ const Home = () => {
 };
 
 export default Home;
-
