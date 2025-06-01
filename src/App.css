@@ -5,7 +5,6 @@
 body {
   margin: 0;
   font-family: "Poppins", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif; /* Fuente para las páginas, con alternativas por si alguna no funciona */
-  /* Fuente principal con alternativas */
   -webkit-font-smoothing: antialiased; /* Suaviza fuentes en Webkit (Chrome, Safari) 
   -moz-osx-font-smoothing: grayscale; /* Suaviza fuentes en Firefox Mac */
 }
