@@ -37,3 +37,15 @@
   object-fit: cover; /* la imagen se escala y recorta para llenar el contenedor */
   object-position: center; /* centramos este recorte */
 }
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  .slider {
+    height: 200px;
+  }
+  .caption {
+    bottom: 10px;
+    font-size: 0.95em;
+    padding: 0 8px;
+  }
+}
