@@ -3,7 +3,7 @@ import ArticlesGrid from "../UserArticles/ArticlesGrid";
 import styles from "./ExchangeArticles.module.css";
 import LootoNavbar from "../Navbar/LootoNavbar";
 
-const initialArticleShown = 6;
+const initialArticleShown = 5;
 
 const ExchangeArticles = () => {
   const [articles, setArticles] = useState([]);
