@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ArticlesGrid from "../UserArticles/ArticlesGrid";
 import styles from "./Articles.module.css";
 
-const initialArticleShown = 10; // 10 filas, 10 artículos en el inicio
+const initialArticleShown = 12; // 12 artículos en el inicio
 
 const UserArticles = () => {
   const [articles, setArticles] = useState([]); // Todos los artículos del usuario
