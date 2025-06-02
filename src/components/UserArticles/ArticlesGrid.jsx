@@ -73,12 +73,16 @@ const ArticlesGrid = ({
                 {/*Aunque no haya precio, se reserva el espacio en la "tarjeta", manteniendo la alineación*/}
               </p>
               {/* Datos de visitas y favoritos (random) */}
-              {showVisits && (
-                <p className={styles.visits}>Visitas: {randomVisits}</p>
-              )}
-              {showFavorites && (
-                <p className={styles.favorites}>Favoritos: {randomFavorites}</p>
-              )}
+              <div className={styles.statsBox}>
+                {showVisits && (
+                  <p className={styles.visits}>Visitas: {randomVisits}</p>
+                )}
+                {showFavorites && (
+                  <p className={styles.favorites}>
+                    Favoritos: {randomFavorites}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         );
