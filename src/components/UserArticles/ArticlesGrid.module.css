@@ -94,16 +94,31 @@
     padding: 8px;
   }
   .articleBox {
-    padding: 6px;      
-    min-width: 0;    
+    padding: 6px;
+    min-width: 0;
   }
   .articleImg {
-    height: 110px;      
-    object-fit: cover;   
+    height: 110px;
+    object-fit: cover;
     margin-bottom: 8px;
   }
   .articleContent {
-    height: auto;       
+    height: auto;
     padding-left: 3px;
+  }
+  .visits,
+  .favorites {
+    font-size: 0.7rem;
+    display: inline-block;
+    position: static;
+    margin: 0 4px 0 0;
+    max-width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+  }
+  .favorites {
+    margin-left: 0;
   }
 }

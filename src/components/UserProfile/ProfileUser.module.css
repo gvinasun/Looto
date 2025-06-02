@@ -52,3 +52,11 @@
   height: auto;
   margin-right: 4px;
 }
+
+@media (max-width: 480px) {
+  .username {
+    font-size: 1.1rem;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+}

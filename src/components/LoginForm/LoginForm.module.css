@@ -132,6 +132,7 @@
   text-align: center;
 }
 
+/* versión móvil */
 @media (max-width: 768px) {
   .formContainer {
     padding: 1rem 0.5rem;

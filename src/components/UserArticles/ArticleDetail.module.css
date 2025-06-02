@@ -152,6 +152,7 @@
   background: #922b21;
 }
 
+/* versión móvil */
 @media (max-width: 768px) {
   .detailContainer {
     flex-direction: column;
