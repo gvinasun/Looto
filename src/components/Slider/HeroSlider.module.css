@@ -20,8 +20,14 @@
 
 /* estilos para centrar el texto */
 .caption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
   transform: translateY(-50%); /* se centra perfectamente */
   color: white;
+  text-align: center;
+  padding: 0 16px;
 }
 
 /* se ajusta el tamaño del contenedor del carrusel */
@@ -44,7 +50,6 @@
     height: 200px;
   }
   .caption {
-    bottom: 10px;
     font-size: 0.95em;
     padding: 0 8px;
   }
