@@ -86,3 +86,9 @@
   right: 0;
   padding-right: 10px;
 }
+
+@media (max-width: 768px) {
+  .articleImg {
+    object-fit: contain;
+  }
+}
