@@ -92,40 +92,4 @@ code {
     height: auto;
     min-height: 100vh;
   }
-
-  .loginSection {
-    padding: 1.5rem 1rem 0 1rem;
-    text-align: center;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .title {
-    font-size: 2rem;
-    padding: 2rem 0 1rem 0;
-    text-align: center;
-    padding-left: 0;
-    padding-top: 2rem;
-  }
-
-  .slogan {
-    font-size: 1.1rem;
-    padding: 0 0.5rem;
-    text-align: center;
-  }
-
-  .formContainer {
-    padding: 1rem 0.5rem;
-    width: 100%;
-    align-items: stretch;
-  }
-
-  .form {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .image {
-    display: none;
-  }
 }

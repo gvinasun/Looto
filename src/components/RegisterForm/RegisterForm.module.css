@@ -110,3 +110,16 @@
   margin-bottom: 1rem;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .registerContainer {
+    padding: 1rem 0.5rem;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .form {
+    max-width: 100%;
+    width: 100%;
+  }
+}

@@ -156,10 +156,8 @@
   .detailContainer {
     flex-direction: column;
     gap: 22px;
-    padding:  12px 4px;
+    padding:  12px;
     margin: 85px 0 0 0;
-    max-width: 90vw;
-    width: 90vw;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
   .imagesSection {
