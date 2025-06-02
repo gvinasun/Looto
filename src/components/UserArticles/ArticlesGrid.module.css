@@ -88,7 +88,22 @@
 }
 
 @media (max-width: 768px) {
+  .articlesGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
+    gap: 12px;
+    padding: 8px;
+  }
+  .articleBox {
+    padding: 6px;      
+    min-width: 0;    
+  }
   .articleImg {
-    object-fit: contain;
+    height: 110px;      
+    object-fit: cover;   
+    margin-bottom: 8px;
+  }
+  .articleContent {
+    height: auto;       
+    padding-left: 3px;
   }
 }
