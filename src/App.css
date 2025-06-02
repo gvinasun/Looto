@@ -88,7 +88,7 @@ code {
 @media (max-width: 768px) {
   .loginContainer,
   .registerContainer {
-    flex-direction: column;
+    flex-direction: column-reverse; /* ponemos el form arriba*/
     height: auto;
     min-height: 100vh;
   }
