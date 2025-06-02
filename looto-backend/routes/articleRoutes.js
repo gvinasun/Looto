@@ -70,7 +70,7 @@ router.get("/public", async (req, res) => {
   try {
     const articles = await Article.find({})
       .sort({ createdAt: -1 }) // Ordena a partir de la fecha de creación
-      .limit(12);  // Devuelve los últimos 10 artículos
+      .limit(10);  // Devuelve los últimos 10 artículos
     res.status(200).json(articles);
   } catch (error) {
     console.error(error);

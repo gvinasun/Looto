@@ -156,7 +156,7 @@
   .detailContainer {
     flex-direction: column;
     gap: 22px;
-    padding: 12px;
+    padding:  12px 4px;
     margin: 85px 0 0 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   }
