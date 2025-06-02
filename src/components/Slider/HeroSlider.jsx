@@ -19,7 +19,7 @@ const Slider = () => {
       src: sliderImgKirby,
       title: "Intercambia o vende y alcanza el 100%",
       description:
-        "¡Completa tus colecciones y ayuda a otros a hacer lo mismo! Cada intercambio es un paso más hacia la victoria",
+        "¡Completa tus colecciones y ayuda a otros a hacer lo mismo!",
     },
     {
       src: sliderImgOP,
