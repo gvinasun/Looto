@@ -50,6 +50,7 @@
     height: 200px;
   }
   .caption {
+    bottom: 10px;
     font-size: 0.95em;
     padding: 0 8px;
   }
